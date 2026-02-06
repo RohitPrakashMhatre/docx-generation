@@ -1,0 +1,12 @@
+# Environments
+venv/
+ENV/
+env/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Project specific
+outputs/
+.vscode/
