@@ -3,7 +3,7 @@ from typing import Dict, Any
 
 class DocumentUploadRequest(BaseModel):
     template_id: str = Field(..., example="hos_AFS.docx")
-    data: Dict[str:Any]
+    data: Dict[str,Any]
 
 class DocumentUploadResponse(BaseModel):
     status: str

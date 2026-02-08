@@ -3,7 +3,7 @@ from docx.shared import Inches
 import requests
 from PIL import Image, ImageOps
 from io import BytesIO  # <- correct name (not BytestIO)
-
+# 
 # --- resize helper (high quality, no upscaling) ---
 def resize_image(img: Image.Image, max_width=1200, max_height=1200) -> Image.Image:
     # fix EXIF rotation if present

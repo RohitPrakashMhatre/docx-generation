@@ -3,17 +3,17 @@ from docx import Document
 import io 
 from datetime import datetime 
 
-from insfrastructure.template_parser import (
+from infrastructure.template_parser import (
     file_hash,
     parse_paragraphs,
     parse_tables
 )
-from models.generate import DocumentUploadResponse, DocumentUploadRequest
+from models.upload import DocumentUploadResponse, DocumentUploadRequest
 
 
-router = APIRouter(prefix="/api/templates", tags=["Templates"])
+upl_router = APIRouter(prefix="/api/templates", tags=["Templates"])
 
-@router.post("/upload")
+@upl_router.post("/upload")
 async def upload_templates(
         file: UploadFile=File(...),
         template_name: str=Form(...)

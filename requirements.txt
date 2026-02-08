@@ -1,0 +1,4 @@
+fastapi
+python-docx
+pydantic
+uvicorn
