@@ -1,0 +1,7 @@
+fastapi
+python-docx
+pydantic
+uvicorn
+python-multipart
+mysql-connector-python
+pydantic-settings
